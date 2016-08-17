@@ -1,4 +1,4 @@
-onload=alert("ERROR: Decipher Failed\nEncryption Detected.");
+// onload=alert("ERROR: Decipher Failed\nEncryption Detected.");
 
 //Cursor artwork created by Ervin Bolat from the Noun Project
 // function setCursorByID(laser,pointer) {
@@ -8,9 +8,20 @@ onload=alert("ERROR: Decipher Failed\nEncryption Detected.");
 //  }
 // }
 
-//Leftside info
-//text animation
 
+var header = document.getElementById("header");
+
+var actions = function() {
+	header.classList.add('is-hidden');
+}
+
+var actions_reverse = function() {
+	header.classList.remove('is-hidden');
+}
+
+// header.addEventListener("click", actions, false);
+header.addEventListener("mouseover", actions, false);
+header.addEventListener("mouseout", actions_reverse, false);
 
 
 //Haftseen 1, Sabzeh
@@ -19,21 +30,12 @@ onload=alert("ERROR: Decipher Failed\nEncryption Detected.");
 //Haftseen 2, Seeb
 //click, image + description
 
-// onclick = function() {
-// 	document.getElementById("seeb").addEventListener("click", 
-// 	document.getElementById("english").style.display;
-// 	// this is function within
-
-// 	console.log("finished");
-	
-// });
 
 //Haftseen 3, sumac
 //hover, farsi 
 //click, language does not exist alert
 
-// onmouseover=document.getElementById('input').style.backgroundColor='Blue';">
-// <input id="input">
+
 // 	alert("ERROR: Language unknown.")
 
 
@@ -53,42 +55,26 @@ onload=alert("ERROR: Decipher Failed\nEncryption Detected.");
 //hover, scramble animation
 // var scramble = document.getElementById("vinegar");
 
-// scramble.onclick=function(){
-// 	document.getElementById("");	
-// 	scramble.classList.toggle("");
-// }
 
 
 //Haftseen 8, kehtab
 //click, binary code/english popup
 
-var header = document.getElementById("header");
-var half_kehbab = document.getElementById("kehbab");
+var kehtab = document.getElementById("kehtab");
 
 var actions = function() {
-	header.classList.add('is-hidden');
+	kehtab.classList.add('flash-hafiz');
+	console.log("yes");
 }
 
 var actions_reverse = function() {
-	header.classList.remove('is-hidden');
+	kehtab.classList.remove('flash-hafiz');
+	console.log("running");
 }
 
+kehtab.addEventListener("click", actions, false)
+kehtab.addEventListener("mouseout", actions_reverse, false);
 
-
-header.addEventListener("click", actions, false);
-header.addEventListener("mouseover", actions, false);
-header.addEventListener("mouseout", actions_reverse, false);
-
-// /;/ var hafiz = document.getElementById("kehtab");
-
-// // hafiz.addEventListener("mouseover")
-
-// //applying a CSS animation
-
-// hafiz.ondblclick = function(){
-// 	boxfive.classList.toggle("do-spin");
-// 	boxfive.classList.add("kehtab");
-// }
 
 //Haftseen 9, ayneh
 //click, image + description

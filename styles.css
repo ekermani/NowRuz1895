@@ -52,8 +52,6 @@ body {
 }
 
 
-
-
 .farsi {
 	background-image: url("images/nowruz-title2.png");
 	position: absolute;
@@ -79,23 +77,16 @@ body {
 }
 
 .haft-seen-item {
-/*	display: hidden;*/
-/*	background-image: url("images/scramble-left.jpg");
-*/	display:inline-block;
+	display:inline-block;
 	height: 150px;
 	width:150px;
 	margin-top: 10px;
 	padding:35px;
-	background: blue;
-
+/*	background-color: white;
+*/
 }
 
-/*#sabzeh {
-	font-family: 'Roboto Mono', sans-serif;
-}*/
-
-
-.animation-class {
+.flash-hafiz {
 	-webkit-animation-name: flashHafiz;
 	-webkit-animation-duration:4s;
 	-webkit-animation-iteration-count: 2;
@@ -103,30 +94,31 @@ body {
 	-webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes flashHafiz {
-	from {
-	-webkit-background-image: url("images/binaryCode.png");
-	-webkit-transform: scale(5);
+@-webkit-keyframes flash-hafiz {
+	0% {
+    background-image: 
+    transform: scale(1);
+  }
+  	60% {
+    background-image: url("images/hafiz.png");
+    transform: scale(2);
+  }
+  	100% {
+    background-image: url("images/binaryCode.png");
+    transform: scale(3);
+  }
+
+/*	-webkit-background-image: url("images/binaryCode.png");
+	-webkit-transform: scale(2);
 	}
 	to {
 	-webkit-background-image: url("images/hafiz.png");
-	-webkit-transform: scale(9);
-	}
+	-webkit-transform: scale(3);
+	}*/
 }
 
 /*@keyframes flashHafiz {
-  0% {
-    background-image: 
-    transform: scale(5);
-  }
-  60% {
-    background-image: url("images/hafiz.png");
-    transform: scale(7);
-  }
-  100% {
-    background-image: url("images/binaryCode.png");
-    transform: scale(9);
-  }
+
 }*/
 
 #sehkeh {
@@ -137,8 +129,6 @@ body {
 	animation-delay: 1s;
 
 }
-
-
 
 @keyframes creditcard {
  	0% {
@@ -164,7 +154,3 @@ body {
 		}
 }
 
-#vinegar:hover {
-	transform: translate(-30px,0px);
-	transform: translate();
-}*/
