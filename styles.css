@@ -30,7 +30,7 @@ body {
 
 .english {
 /* 	background-color: green; */
-/* 	background-image:  */
+	background-image: url("images/scramble-left.jpg");
 	font-family: '#', sans-serif;
 	position: absolute;
 	margin-left: 50px;
@@ -43,11 +43,21 @@ body {
 
 #english-title {
 	font-size: 30pt;
+/*	display:none;*/
+	z-index: 99999;
 
 }
 
+/*.nowruz-info, .haftseen-info {
+	display: none;
+}
+
+.english-title:hover, .nowruz-info:hover, .haftseen-info:hover < #english-title {
+	display:block;
+}*/
+
 .farsi {
-	background-image: url("images/nowruz-title.png");
+	background-image: url("images/nowruz-title2.png");
 	position: absolute;
 	padding-top: 10px;
 	padding-bottom:10px;
@@ -72,13 +82,44 @@ body {
 
 .haft-seen-item {
 /*	display: hidden;*/
-	background-color: white;
+/*	background-color: white;*/
+	background-image: url("images/scramble-left.jpg");
 	display:inline-block;
 	height: 150px;
 	width:150px;
 	margin-top: 10px;
 	padding:35px;
 
-
 }
 
+#kehtab {
+	animation: flashHafiz 3s;
+
+
+}
+/*on hover animate from one image to next
+/*JS - on click give info*/
+/*in JS give a class only for js to hold animation, target class, class list add class*/
+/*classlist.add*/
+/*if mouse enter add class list, else class empty " " */
+@keyframes flashHafiz {
+  0% {
+    background-image: url("images/binaryCode.png");
+    transform: scale(5);
+  }
+  60% {
+    background-image: url("images/hafiz.png");
+/*    transform: scale(7);
+*/  }
+  100% {
+    background-image: url("images/binaryCode.png");
+    transform: scale(9);
+  }
+}
+
+#kehtab:hover {
+/*	animation: flashHafiz 3s;
+*/	animation-delay: 1s;
+/*	animation-iteration-count: 2;
+	animation-play-state: playing;*/
+}
