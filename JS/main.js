@@ -42,6 +42,21 @@
 //Haftseen 4, Sombol
 //click, scramble animation
 
+var sombol = document.getElementById("sombol");
+
+var actions = function() {
+	sombol.classList.add('hyacinth');
+	console.log("flower");
+}
+
+var actions_reverse = function() {
+	sombol.classList.remove('hyacinth');
+	console.log("flower2");
+}
+
+sombol.addEventListener("click", actions, false)
+sombol.addEventListener("mouseout", actions_reverse, false);
+
 
 //Haftseen 5, seer
 //click, image + description
@@ -50,20 +65,20 @@
 //hover, credit card
 //click, description
 
-// var sehkeh = document.getElementById("sehkeh");
+var sehkeh = document.getElementById("sehkeh");
 
-// var actions = function() {
-// 	sehkeh.classList.add('creditcard');
-// 	console.log("creditcard");
-// }
+var actions = function() {
+	sehkeh.classList.add('creditcard');
+	console.log("cc");
+}
 
-// var actions_reverse = function() {
-// 	sehkeh.classList.remove('creditcard');
-// 	console.log("rotation");
-// }
+var actions_reverse = function() {
+	sehkeh.classList.remove('creditcard');
+	console.log("cc2");
+}
 
-// sehkeh.addEventListener("click", actions, false)
-// sehkeh.addEventListener("mouseout", actions_reverse, false);
+sehkeh.addEventListener("click", actions, false)
+sehkeh.addEventListener("mouseout", actions_reverse, false);
 
 //Haftseen 7, vinegar
 //hover, scramble animation
