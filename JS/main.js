@@ -3,30 +3,30 @@
 //Cursor artwork created by Ervin Bolat from the Noun Project
 // function setCursorByID(laser,pointer) {
 //  var elem;
-//  if (document.getElementById && (elem=document.getElementById("laser")) ) {
+//  if (document.getElementById && (elem=document.getElementById("laserpointer")) ) {
 //   if (elem.style) elem.style.cursor=cursorStyle;
 //  }
 // }
 
 
-var header = document.getElementById("header");
+// var header = document.getElementById("header");
 
-var actions = function() {
-	header.classList.add('is-hidden');
-}
+// var actions = function() {
+// 	header.classList.add('is-hidden');
+// }
 
-var actions_reverse = function() {
-	header.classList.remove('is-hidden');
-}
+// var actions_reverse = function() {
+// 	header.classList.remove('is-hidden');
+// }
 
 // header.addEventListener("click", actions, false);
-header.addEventListener("mouseover", actions, false);
-header.addEventListener("mouseout", actions_reverse, false);
+// header.addEventListener("mouseover", actions, false);
+// header.addEventListener("mouseout", actions_reverse, false);
 
 
 //Haftseen 1, Sabzeh
-//click, alert --> alert onload
-	
+//hover
+
 //Haftseen 2, Seeb
 //click, image + description
 
@@ -50,6 +50,20 @@ header.addEventListener("mouseout", actions_reverse, false);
 //hover, credit card
 //click, description
 
+// var sehkeh = document.getElementById("sehkeh");
+
+// var actions = function() {
+// 	sehkeh.classList.add('creditcard');
+// 	console.log("creditcard");
+// }
+
+// var actions_reverse = function() {
+// 	sehkeh.classList.remove('creditcard');
+// 	console.log("rotation");
+// }
+
+// sehkeh.addEventListener("click", actions, false)
+// sehkeh.addEventListener("mouseout", actions_reverse, false);
 
 //Haftseen 7, vinegar
 //hover, scramble animation
